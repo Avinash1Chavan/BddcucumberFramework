@@ -6,8 +6,9 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.Reporter;
 import pages.*;
 import utils.ExcelReader;
 
@@ -55,9 +56,10 @@ public class MyStepdefs {
     }
 
     @And("Click on search button")
-    public void clickOnSearchButton() {
+    public void clickOnSearchButton() throws InterruptedException {
 
-        homePage.ClickSearchButton();
+        homePage.ClickSearchButton().click();
+        Thread.sleep(2000);
     }
 
 //    @Then("user gets the title of the page")
@@ -75,19 +77,25 @@ public class MyStepdefs {
 
 
     @When("user clicks on the sort by button")
-    public void userClicksOnTheSortByButton() {
-        sortBy.ClickonSortby();
+    public void userClicksOnTheSortByButton() throws InterruptedException {
+        sortBy.ClickonSortby().click();
+        Thread.sleep(2000);
     }
 
     @And("user clicks on the popularity")
     public void userClicksOnThePopularity() {
-        sortBy.clickpopularity();
+        sortBy.clickpopularity().click();
     }
 
     @And("user sets the price range")
     public void userSetsTheSecondPriceRange() throws InterruptedException {
-        selectPriceRange.clickFirstPriceRange();
-        selectPriceRange.clickLastPriceRange();
+        selectPriceRange.clickFirstPriceRange().click();
+        selectPriceRange.clickFirstPriceRange().clear();
+        selectPriceRange.clickFirstPriceRange().sendKeys("700");
+        selectPriceRange.clickLastPriceRange().click();
+        selectPriceRange.clickLastPriceRange().clear();
+        selectPriceRange.clickLastPriceRange().sendKeys("3000");
+        Thread.sleep(3000);
         selectPriceRange.clickonGOButton();
     }
 
@@ -103,22 +111,29 @@ public class MyStepdefs {
 
     @And("user clicks on add to cart")
     public void userClicksOnAddToCart() {
-        addToCart.SelectAddtoCart();
+        addToCart.SelectAddtoCart().click();
     }
 
     @And("user verifies item added to cart")
-    public void userVerifiesItemAddedToCart() {
+    public void userVerifiesItemAddedToCart() throws InterruptedException {
         verifyAddToCartItem.clickonviewCart();
+        Thread.sleep(2000);
+        String verifiediteam =verifyAddToCartItem.ChecktheAddCartIteamRnot();
+        Assert.assertEquals(verifiediteam, "Shopping Cart (1 Item)");
+        Reporter.log("successfully verified AddtoCart item", true);
     }
 
     @And("user verifies item removed from cart")
     public void userVerifiesItemRemovedFromCart() {
-        removeCartAndVerify.clickRemoveCart();
+        removeCartAndVerify.clickRemoveCart().click();
     }
 
     @Then("user gets message")
-    public void userGetsMessage() {
-        removeCartAndVerify.verifyremoveCart();
+    public void userGetsMessage() throws InterruptedException {
+        Thread.sleep(2000);
+        String verifedremovecart =removeCartAndVerify.verifyremoveCart();
+        Assert.assertEquals(verifedremovecart, "Shopping Cart is empty!");
+        Reporter.log("successfully verified remove cart item", true);
     }
 
     @And("the message should be {string}")

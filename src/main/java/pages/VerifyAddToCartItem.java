@@ -19,11 +19,13 @@ public class VerifyAddToCartItem {
         PageFactory.initElements(driver, this);
     }
 
-    public WebElement clickonviewCart() {
-        return clickViewCart;
+    public void clickonviewCart() {
+        clickViewCart.click();
     }
 
-    public WebElement ChecktheAddCartIteamRnot() {
-        return VerifyShoppingCart;
+    public String ChecktheAddCartIteamRnot() {
+         VerifyShoppingCart.getText();
+
+        return null;
     }
 }

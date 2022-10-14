@@ -10,7 +10,7 @@ public class SelectPriceRange {
     WebDriver driver;
 
     @FindBy(xpath = "//input[@name='fromVal']")
-    WebElement clickFirstPrice;
+    WebElement clickFristPrice;
 
     @FindBy(xpath = "//input[@name='toVal']")
     WebElement clickLastPrice;
@@ -25,13 +25,13 @@ public class SelectPriceRange {
         PageFactory.initElements(driver, this);
     }
 
-    public void clickFirstPriceRange() throws InterruptedException {
-        Thread.sleep(3000);
-        clickFirstPrice.sendKeys("700");
+
+    public WebElement clickFirstPriceRange() {
+        return clickFristPrice;
     }
 
-    public void clickLastPriceRange() {
-         clickLastPrice.sendKeys("3000");
+    public WebElement clickLastPriceRange() {
+        return clickLastPrice;
     }
 
     public void clickonGOButton() {
