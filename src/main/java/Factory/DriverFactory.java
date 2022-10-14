@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.time.Duration;
+
 public class DriverFactory {
     public WebDriver driver;
 
@@ -14,7 +16,7 @@ public class DriverFactory {
 
     public WebDriver init_driver(String browser) {
 
-        System.out.println("browser value is: " + browser);
+        System.out.println("browser name is: " + browser);
 
         if (browser.equals("chrome")) {
             WebDriverManager.chromedriver().setup();
@@ -31,7 +33,6 @@ public class DriverFactory {
 
         getDriver().manage().window().maximize();
         getDriver().manage().deleteAllCookies();
-
         return getDriver();
 
     }

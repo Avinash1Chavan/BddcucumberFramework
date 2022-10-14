@@ -26,9 +26,10 @@ public class RemoveCartAndVerify {
         return removeCart;
     }
 
-    public void verifyremoveCart()
+    public String verifyremoveCart()
     {
          VerifyRemoveCart.getText();
+        return null;
     }
 
 }

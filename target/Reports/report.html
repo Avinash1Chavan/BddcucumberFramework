@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 14, 2022 10:45:34 AM</span></a>
+<a href="#"><span class="badge badge-primary">Oct 14, 2022 11:53:40 AM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 14, 2022 10:45:34 AM</h3>
+<h3>Oct 14, 2022 11:53:40 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 14, 2022 10:46:07 AM</h3>
+<h3>Oct 14, 2022 11:53:47 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,10 +143,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='46%'><b>6</b> steps passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
 <div>
-<small data-tooltip='7%'><b>1</b> steps failed,
-<b>6</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='20%'><b>3</b> steps failed,
+<b>12</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"SearchKeyword":31.926
+"SearchKeyword":6.652
 };
 </script>
 <div class="row">
@@ -173,16 +173,16 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
 <tbody>
 <tr>
-<td>AppName</td>
-<td>{Automation framework} </td>
+<td>build</td>
+<td>10</td>
 </tr>
 <tr>
 <td>user</td>
-<td>{Windows}</td>
+<td>Windows</td>
 </tr>
 <tr>
-<td>build</td>
-<td>{10}</td>
+<td>AppName</td>
+<td>Automation framework</td>
 </tr>
 </tbody>
 </table></div>
@@ -204,10 +204,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 6,
-failGrandChild: 1,
+passGrandChild: 0,
+failGrandChild: 3,
 warningGrandChild: 0,
-skipGrandChild: 6,
+skipGrandChild: 12,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -236,7 +236,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">SearchKeyword</p>
             <p class="text-sm">
-              <span>10:45:35 AM</span> / <span>00:00:31:926</span>
+              <span>11:53:41 AM</span> / <span>00:00:06:652</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -245,9 +245,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">SearchKeyword</h5>
-<span class='badge badge-success'>10.14.2022 10:45:35 AM</span>
-<span class='badge badge-danger'>10.14.2022 10:46:07 AM</span>
-<span class='badge badge-default'>00:00:31:926</span>
+<span class='badge badge-success'>10.14.2022 11:53:41 AM</span>
+<span class='badge badge-danger'>10.14.2022 11:53:47 AM</span>
+<span class='badge badge-default'>00:00:06:652</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -260,9 +260,6 @@ eventsCount: 5,
     <div class="card-header" role="tab">
       <div class="card-title">
         <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Successfully Item has been searched</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
       </div>
     </div>
         <div class="scenario_outline ">
@@ -270,72 +267,47 @@ eventsCount: 5,
               <div class="card-header">
                 <div class="card-title outline-child">
                   <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>Successfully Item has been searched</div>
-                    <div class="status-avatar float-right">
-                      <i class="fa fa-paperclip"></i>
-                    </div>
                 </div>
               </div>
               <div class="card-body mt-3 ">
-                  <div class="step pass-bg">
-                    <span>Given user is on home page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When user enter the item in search engine from given sheetname "SearchProduct" and rownumber 0</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Click on search button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user clicks on the sort by button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user clicks on the popularity</span>
-      <div>
-      </div>
-                  </div>
                   <div class="step fail-bg">
-                    <span>And user sets the price range</span>
+                    <span>AppHooks.ApplicationHooks.launchBrowser()</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[value='179']"}
-  (Session info: chrome=105.0.5195.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d2864923a8c1277a2e477839f5d996ce, findElement {using=css selector, value=input[value='179']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\AC67129\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51894}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51894/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d2864923a8c1277a2e477839f5d996ce
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy27.sendKeys(Unknown Source)
-	at pages.SelectPriceRange.clickFirstPriceRange(SelectPriceRange.java:30)
-	at stepdefinations.MyStepdefs.userSetsTheSecondPriceRange(MyStepdefs.java:89)
-	at ✽.user sets the price range(file:///C:/Users/AC67129/Desktop/practices/BddCucumber/src/test/resources/features/SearchKeyword.feature:9)
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at Factory.DriverFactory.init_driver(DriverFactory.java:36)
+	at AppHooks.ApplicationHooks.launchBrowser(ApplicationHooks.java:30)
 </textarea>
       
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Given user is on home page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When user enter the item in search engine from given sheetname "SearchProduct" and rownumber 0</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on search button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user clicks on the sort by button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user clicks on the popularity</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user sets the price range</span>
+      <div>Step skipped
       </div>
                   </div>
                   <div class="step skip-bg">
@@ -368,15 +340,22 @@ Session ID: d2864923a8c1277a2e477839f5d996ce
       <div>Step skipped
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step fail-bg">
                     <span>AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>Successfully_Item_has_been_searched
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded1.png' src="../embedded1.png">
-    
-    </div></div>
-</div>
       <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at AppHooks.ApplicationHooks.tearDown(ApplicationHooks.java:44)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>AppHooks.ApplicationHooks.quitBrowser()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at AppHooks.ApplicationHooks.quitBrowser(ApplicationHooks.java:36)
+</textarea>
+      
       </div>
                   </div>
               </div>
@@ -406,15 +385,15 @@ Session ID: d2864923a8c1277a2e477839f5d996ce
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-danger'>3</span>
 </span>
-<p class="name">org.openqa.selenium.NoSuchElementException</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">3 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.NoSuchElementException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -427,11 +406,31 @@ Session ID: d2864923a8c1277a2e477839f5d996ce
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>10:46:02 AM</td>
+<td>11:53:41 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='11'>And user sets the price range</a>
+<a href="#" class="linked" test-id='1' id='5'>AppHooks.ApplicationHooks.launchBrowser()</a>
 <div class="">
-<span class="badge badge-default">SearchKeyword.Successfully Item has been searched.And user sets the price range</span>
+<span class="badge badge-default">SearchKeyword.Successfully Item has been searched.AppHooks.ApplicationHooks.launchBrowser()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:53:47 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">SearchKeyword.Successfully Item has been searched.AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:53:47 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='19'>AppHooks.ApplicationHooks.quitBrowser()</a>
+<div class="">
+<span class="badge badge-default">SearchKeyword.Successfully Item has been searched.AppHooks.ApplicationHooks.quitBrowser()</span>
 </div>
 </td>
 </tr>

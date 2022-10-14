@@ -7,14 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SortBy {
     WebDriver driver;
-    @FindBy(xpath = "//div[@class='sorting-sec animBounce']")
+    @FindBy(xpath = "//div[@class='sorting-sec animBounce']/div[@class='sort-drop clearfix']")
     WebElement clickSortby;
 
     @FindBy(xpath = "//div[@class='sorting-sec animBounce']/ul[@style='z-index: 17;']/li[@data-sorttype='plrty']")
     WebElement popularity;
-
-    @FindBy(xpath = "//div[@class='search-result-txt-section  marT12']/span[@style='color: #212121; font-weight: normal']")
-    WebElement SearchResult;
 
     public SortBy(WebDriver driver) {
         this.driver = driver;
@@ -29,8 +26,6 @@ public class SortBy {
         return popularity;
     }
 
-    public WebElement VerifysearchCriteria() {
-        return SearchResult;
 
     }
-}
+
