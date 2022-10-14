@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 13, 2022 12:53:30 PM</span></a>
+<a href="#"><span class="badge badge-primary">Oct 14, 2022 10:45:34 AM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 13, 2022 12:53:30 PM</h3>
+<h3>Oct 14, 2022 10:45:34 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 13, 2022 12:54:30 PM</h3>
+<h3>Oct 14, 2022 10:46:07 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,10 +143,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='83%'><b>5</b> steps passed</small></div>
+<div><small data-tooltip='46%'><b>6</b> steps passed</small></div>
 <div>
-<small data-tooltip='16%'><b>1</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='7%'><b>1</b> steps failed,
+<b>6</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"SearchKeyword":58.777
+"SearchKeyword":31.926
 };
 </script>
 <div class="row">
@@ -204,10 +204,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 5,
+passGrandChild: 6,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 6,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -236,7 +236,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">SearchKeyword</p>
             <p class="text-sm">
-              <span>12:53:32 PM</span> / <span>00:00:58:777</span>
+              <span>10:45:35 AM</span> / <span>00:00:31:926</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -245,9 +245,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">SearchKeyword</h5>
-<span class='badge badge-success'>10.13.2022 12:53:32 PM</span>
-<span class='badge badge-danger'>10.13.2022 12:54:30 PM</span>
-<span class='badge badge-default'>00:00:58:777</span>
+<span class='badge badge-success'>10.14.2022 10:45:35 AM</span>
+<span class='badge badge-danger'>10.14.2022 10:46:07 AM</span>
+<span class='badge badge-default'>00:00:31:926</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -292,21 +292,80 @@ eventsCount: 5,
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then user gets the title of the page</span>
+                    <span>And user clicks on the sort by button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user clicks on the popularity</span>
       <div>
       </div>
                   </div>
                   <div class="step fail-bg">
-                    <span>And page title should be "Snapdeal.com - Online shopping India- Discounts - shop Online Perfumes, Watches, sunglasses etc"</span>
+                    <span>And user sets the price range</span>
       <div>
-        <textarea disabled class="code-block">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinations.MyStepdefs.page_title_should_be(MyStepdefs.java:82)
-	at ✽.page title should be "Snapdeal.com - Online shopping India- Discounts - shop Online Perfumes, Watches, sunglasses etc"(file:///C:/Users/AC67129/Desktop/practices/BddCucumber/src/test/resources/features/SearchKeyword.feature:8)
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[value='179']"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2864923a8c1277a2e477839f5d996ce, findElement {using=css selector, value=input[value='179']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\AC67129\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51894}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51894/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2864923a8c1277a2e477839f5d996ce
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.sendKeys(Unknown Source)
+	at pages.SelectPriceRange.clickFirstPriceRange(SelectPriceRange.java:30)
+	at stepdefinations.MyStepdefs.userSetsTheSecondPriceRange(MyStepdefs.java:89)
+	at ✽.user sets the price range(file:///C:/Users/AC67129/Desktop/practices/BddCucumber/src/test/resources/features/SearchKeyword.feature:9)
 </textarea>
       
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user clicks on the first item</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user clicks on add to cart</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user verifies item added to cart</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user verifies item removed from cart</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then user gets message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And the message should be "Shopping Cart is empty!"</span>
+      <div>Step skipped
       </div>
                   </div>
                   <div class="step pass-bg">
@@ -349,12 +408,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.AssertionError</p>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.AssertionError</h4>
+<h4>org.openqa.selenium.NoSuchElementException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -368,11 +427,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>12:54:29 PM</td>
+<td>10:46:02 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='10'>And page title should be "Snapdeal.com - Online shopping India- Discounts - shop Online Perfumes, Watches, sunglasses etc"</a>
+<a href="#" class="linked" test-id='1' id='11'>And user sets the price range</a>
 <div class="">
-<span class="badge badge-default">SearchKeyword.Successfully Item has been searched.And page title should be "Snapdeal.com - Online shopping India- Discounts - shop Online Perfumes, Watches, sunglasses etc"</span>
+<span class="badge badge-default">SearchKeyword.Successfully Item has been searched.And user sets the price range</span>
 </div>
 </td>
 </tr>
